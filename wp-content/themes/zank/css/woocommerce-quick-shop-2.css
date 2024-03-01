@@ -1,0 +1,195 @@
+/*
+* zank quick shop
+*/
+.zank-quickshop-wrapper {
+	max-width: 500px;
+	background: var(--zank-light);
+	padding: 30px;
+	margin: 0 auto;
+}
+
+.zank-selected-variations-terms-wrapper {
+	display: none;
+}
+
+.zank-selected-variations-terms span {
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+.zank-selected-variations-terms .selected-value {
+	color: var(--zank-dark);
+}
+
+.zank-selected-variations-terms-title {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 500;
+	color: var(--zank-dark);
+	margin-bottom: 10px;
+	display: block;
+	line-height: 1;
+}
+
+.zank-selected-variations-terms-wrapper .selected-features+.selected-features {
+	margin-left: 10px;
+}
+
+.zank-quickshop-wrapper .zank-variations {
+	margin-bottom: 0px;
+}
+
+.zank-quickshop-wrapper .woocommerce-message {
+	margin-top: 30px;
+	padding: 0;
+	background: none;
+	color: var(--zank-success);
+	text-align: left;
+}
+
+.zank-quickshop-wrapper .zank-quickshop-form-wrapper {
+	display: block;
+}
+
+.zank-quickshop-wrapper .zank-quickshop-form-wrapper .woocommerce div.product span.price,
+.zank-quickshop-wrapper .zank-quickshop-form-wrapper .woocommerce-variation-price .price,
+.zank-quickshop-wrapper .zank-price {
+	color: var(--zank-gray-dark);
+	font-size: 21px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.zank-quickshop-wrapper .zank-small-title,
+.zank-quickshop-wrapper .zank-small-title a {
+	margin-right: 15px;
+}
+
+.zank-quickshop-wrapper form.zank-summary-item.zank-flex.cart.grouped_form .zank-after-cart-grouped-button-wrapper button {
+	width: auto;
+	flex: 0 0 100%;
+}
+
+.product.zank-quickshop-wrapper .single_variation_wrap.single-product-add-to-cart-type-black .woocommerce-variation-add-to-cart,
+.product.zank-quickshop-wrapper .single_variation_wrap.single-product-add-to-cart-type-gray .woocommerce-variation-add-to-cart {
+	margin-top: 10px;
+	background: transparent;
+	border: 0;
+	padding: 0;
+}
+
+.zank-quickshop-wrapper ul.woocommerce-error {
+	list-style: none;
+	position: relative;
+	margin: 0;
+	margin-top: 10px;
+	padding: 25px 15px 15px 15px;
+	background: var(--zank-red);
+	color: var(--zank-light);
+}
+
+.zank-quickshop-wrapper .woocommerce-message {
+	margin-top: 30px;
+	padding: 0;
+	background: none;
+	color: var(--zank-success);
+	text-align: left;
+	font-size: 14px;
+}
+
+.zank-quickshop-wrapper .zank-btn {
+	flex: 1 1 0;
+}
+
+.zank-quickshop-wrapper .zank-quickshop-buttons-wrapper:not(.active),
+.zank-quickshop-wrapper .zank-quickshop-notices-wrapper:not(.active),
+.zank-quickshop-wrapper .woocommerce-message .button.wc-forward {
+	display: none;
+}
+
+.zank-quickshop-wrapper .mfp-close.zank-panel-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    opacity: 1;
+    background: var(--zank-primary);
+    padding: 0;
+}
+
+.zank-quickshop-wrapper .zank-panel-close-button:before,
+.zank-quickshop-wrapper .zank-panel-close-button:after {
+	background-color: var(--zank-light);
+	opacity: 1;
+}
+
+.zank-quickshop-wrapper .quantity {
+	max-width: 120px;
+}
+
+.zank-quickshop-wrapper .zank-quickshop-buttons-wrapper {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: -38px;
+}
+
+.zank-quickshop-wrapper .zank-quickshop-buttons-wrapper .zank-btn {
+	min-width: auto !important;
+	width: 50%;
+	cursor: pointer;
+}
+
+.zank-quickshop-wrapper .minicart-extra-text {
+	margin: 0;
+	position: absolute;
+	width: 100%;
+	top: -41px;
+	left: 0;
+	padding: 7px 40px 7px 30px;
+	background: var(--zank-dark);
+	text-align: left;
+	color: var(--zank-light);
+}
+
+.zank-quickshop-wrapper .woocommerce-variation-price {
+	margin: 0px 0 10px;
+}
+
+.zank-quickshop-wrapper .woobt-alert {
+	padding: 6px 10px 6px 14px;
+	border: 1px solid var(--zank-warning-border);
+	background-color: var(--zank-warning-bg);
+	font-size: 12px;
+	color: var(--zank-warning);
+	border-radius: var(--zank-border-radius);
+}
+
+.zank-quickshop-wrapper .woobt-products .woobt-product {
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.zank-quickshop-wrapper .woobt-wrap .woobt-products {
+	margin: 0;
+}
+
+.zank-quickshop-wrapper .zank-after-cart-button-wrapper {
+	display: none;
+}
+
+@media(max-width:576px) {
+	.zank-quickshop-wrapper .quantity {
+		max-width: 100%;
+	}
+
+	.zank-quickshop-wrapper .zank-hint {
+		display: none;
+	}
+
+	.product-after-cart-wrapper {
+		width: 100%;
+	}
+}

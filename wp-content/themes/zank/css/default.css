@@ -1,0 +1,1451 @@
+html {
+	line-height: 1.15;
+	/* 1 */
+	-webkit-text-size-adjust: 100%;
+	/* 2 */
+}
+
+main {
+	display: block;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
+}
+
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	/* 1 */
+	font-size: 1em;
+	/* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+	border-style: none;
+}
+
+/* Forms
+	 ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	/* 1 */
+	font-size: 100%;
+	/* 1 */
+	line-height: 1.15;
+	/* 1 */
+	margin: 0;
+	/* 2 */
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder,
+textarea::-webkit-input-placeholder,
+textarea:-moz-placeholder,
+textarea::-moz-placeholder,
+textarea:-ms-input-placeholder,
+textarea::placeholder,
+::placeholder {
+	  color: var(--zank-gray-dark) !important;
+}
+
+
+.has-default-header-type-dark ::-webkit-input-placeholder,
+.has-default-header-type-dark ::-moz-placeholder,
+.has-default-header-type-dark :-ms-input-placeholder,
+.has-default-header-type-dark :-moz-placeholder,
+.has-default-header-type-dark textarea::-webkit-input-placeholder,
+.has-default-header-type-dark textarea:-moz-placeholder,
+.has-default-header-type-dark textarea::-moz-placeholder,
+.has-default-header-type-dark textarea:-ms-input-placeholder,
+.has-default-header-type-dark textarea::placeholder,
+.has-default-header-type-dark ::placeholder {
+  color: #bbbbbb !important;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+	/* 1 */
+	overflow: visible;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+	/* 1 */
+	text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+	box-sizing: border-box;
+	/* 1 */
+	color: inherit;
+	/* 2 */
+	display: table;
+	/* 1 */
+	max-width: 100%;
+	/* 1 */
+	padding: 0;
+	/* 3 */
+	white-space: normal;
+	/* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+	vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+	overflow: auto;
+	  -o-transition: height .3s ease-in-out;
+    -webkit-transition: height .3s ease-in-out;
+    transition: height .3s ease-in-out;
+}
+
+textarea:focus {
+    -o-transition: height .3s ease-in-out;
+    -webkit-transition: height .3s ease-in-out;
+    transition: height .3s ease-in-out;
+}
+
+
+input:focus, textarea:focus, textarea:focus::placeholder {
+    color: var(--zank-black);
+    border-color: var(--zank-black) !important;
+}
+
+::placeholder,
+::-moz-placeholder,
+::-webkit-input-placeholder,
+:-ms-input-placeholder {
+	color: var(--zank-gray-dark);
+	-o-transition: color .3s ease-in-out;
+	-webkit-transition: color .3s ease-in-out;
+	transition: color .3s ease-in-out;
+}
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+	-webkit-appearance: textfield;
+	/* 1 */
+	outline-offset: -2px;
+	/* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	/* 1 */
+	font: inherit;
+	/* 2 */
+}
+
+/* Interactive
+	 ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+	display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+	display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+	display: none;
+}
+
+/* 02 - Print Styles */
+@media print {
+	*,
+	*::before,
+	*::after {
+		text-shadow: none;
+		box-shadow: none;
+	}
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+
+html {
+	font-size: var(--font-size);
+}
+
+body {
+	font-family: var(--font-primary);
+	font-weight: var(--font-weight);
+	color: var(--color-text);
+	line-height: var(--line-height);
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	overflow-y: scroll;
+}
+
+a {
+	color: var(--color-primary);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--color-primary-tint);
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+hr {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: var(--color-grey2);
+}
+
+hr:last-child {
+	margin-bottom: 0;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+	height: auto;
+}
+
+b, strong {
+    font-weight: 500;
+    color: var(--zank-black);
+}
+
+nav ol,
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+iframe {
+	display: block;
+	width: 100%;
+	border: 0;
+	overflow: hidden;
+}
+
+canvas {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+blockquote {
+	margin: 0;
+	border-left: 5px solid var(--color-grey2);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-align: left;
+	background-color: var(--color-grey1);
+}
+
+blockquote:not(:first-child) {
+	margin-top: 30px;
+}
+
+blockquote:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+blockquote footer {
+	color: var(--color-primary-tint);
+}
+
+@media (max-width: 991px) {
+	blockquote {
+		padding: 30px;
+	}
+}
+
+@media (min-width: 992px) {
+	blockquote {
+		position: relative;
+		padding: 60px 15%;
+		font-size: 24px;
+		overflow: hidden;
+	}
+
+	blockquote:before {
+		position: absolute;
+		top: -30px;
+		left: 0;
+		content: "\"";
+		font-size: 200px;
+		line-height: 1;
+		-webkit-opacity: 0.2;
+		-khtml-opacity: 0.2;
+		-moz-opacity: 0.2;
+		opacity: 0.2;
+	}
+}
+
+label {
+	display: inline-block;
+	max-width: 100%;
+}
+
+mark {
+	color: var(--color-primary);
+	background-color: #fcf8e3;
+}
+
+code {
+	padding: 2px 4px;
+	background-color: var(--color-grey1);
+}
+
+kbd {
+	padding: 2px 4px;
+	font-weight: 600;
+	color: var(--color-white);
+	background-color: var(--color-primary);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+pre {
+    display: block;
+    margin-top: 0;
+    font-size: 90%;
+    border: 1px solid var(--zank-gray);
+    overflow: auto;
+	margin-bottom: 20px;
+	padding: 15px;
+	word-break: break-all;
+	word-wrap: break-word;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+pre:last-child {
+	margin-bottom: 0;
+}
+
+dt {
+	font-weight: 600;
+}
+
+dt:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+dd {
+	margin-left: 0;
+}
+
+dd:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+address {
+	margin-bottom: 20px;
+	font-style: normal;
+	line-height: inherit;
+}
+
+address:last-child {
+	margin-bottom: 0;
+}
+
+cite {
+	font-style: normal;
+}
+
+table {
+	border-collapse: collapse;
+	background-color: transparent;
+}
+
+th {
+	text-align: left;
+	font-weight: 500;
+	color: var(--zank-black);
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+input[type=checkbox], input[type=radio] {
+    margin: 0;
+    margin-right: 5px;
+    font-size: 16px;
+}
+input[type="search"] {
+	-webkit-appearance: none;
+}
+
+input[type="radio"]:disabled,
+input[type="checkbox"]:disabled {
+	cursor: not-allowed;
+}
+
+textarea {
+	resize: vertical;
+}
+
+input,
+select,
+textarea,
+input[type="radio"],
+input[type="checkbox"] {
+	background-color: transparent;
+}
+
+input,
+select,
+textarea,
+input[type="checkbox"] {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	color: var(--zank-gray-dark);
+}
+
+textarea {
+	min-height: 110px;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+	padding: 12px 10px;
+    min-height: 45px;
+    border: 1px solid var(--zank-gray);
+	max-width: 100%;
+}
+
+.quantity input.qty {
+	padding: 0;
+    min-height: inherit;
+    border: 0;
+	max-width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	vertical-align: middle;
+}
+
+
+/* Deafult Margin & Padding */
+/*-- Margin Top --*/
+.mt-5 {
+	margin-top: 5px;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
+.mt-15 {
+	margin-top: 15px;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+.mt-25 {
+	margin-top: 25px;
+}
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+.mt-35 {
+	margin-top: 35px;
+}
+
+.mt-40 {
+	margin-top: 40px;
+}
+
+.mt-45 {
+	margin-top: 45px;
+}
+
+.mt-50 {
+	margin-top: 50px;
+}
+
+.mt-55 {
+	margin-top: 55px;
+}
+
+.mt-60 {
+	margin-top: 60px;
+}
+
+.mt-65 {
+	margin-top: 65px;
+}
+
+.mt-70 {
+	margin-top: 70px;
+}
+
+.mt-75 {
+	margin-top: 75px;
+}
+
+.mt-80 {
+	margin-top: 80px;
+}
+
+.mt-85 {
+	margin-top: 85px;
+}
+
+.mt-90 {
+	margin-top: 90px;
+}
+
+.mt-95 {
+	margin-top: 95px;
+}
+
+.mt-100 {
+	margin-top: 100px;
+}
+
+.mt-105 {
+	margin-top: 105px;
+}
+
+.mt-110 {
+	margin-top: 110px;
+}
+
+.mt-115 {
+	margin-top: 115px;
+}
+
+.mt-120 {
+	margin-top: 120px;
+}
+
+.mt-125 {
+	margin-top: 125px;
+}
+
+.mt-130 {
+	margin-top: 130px;
+}
+
+.mt-135 {
+	margin-top: 135px;
+}
+
+.mt-140 {
+	margin-top: 140px;
+}
+
+.mt-145 {
+	margin-top: 145px;
+}
+
+.mt-150 {
+	margin-top: 150px;
+}
+
+.mt-155 {
+	margin-top: 155px;
+}
+
+.mt-160 {
+	margin-top: 160px;
+}
+
+.mt-165 {
+	margin-top: 165px;
+}
+
+.mt-170 {
+	margin-top: 170px;
+}
+
+.mt-175 {
+	margin-top: 175px;
+}
+
+.mt-180 {
+	margin-top: 180px;
+}
+
+.mt-185 {
+	margin-top: 185px;
+}
+
+.mt-190 {
+	margin-top: 190px;
+}
+
+.mt-195 {
+	margin-top: 195px;
+}
+
+.mt-200 {
+	margin-top: 200px;
+}
+
+/*-- Margin Bottom --*/
+.mb-5 {
+	margin-bottom: 5px;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+
+.mb-15 {
+	margin-bottom: 15px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.mb-25 {
+	margin-bottom: 25px;
+}
+
+.mb-30 {
+	margin-bottom: 30px;
+}
+
+.mb-35 {
+	margin-bottom: 35px;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.mb-45 {
+	margin-bottom: 45px;
+}
+
+.mb-50 {
+	margin-bottom: 50px;
+}
+
+.mb-55 {
+	margin-bottom: 55px;
+}
+
+.mb-60 {
+	margin-bottom: 60px;
+}
+
+.mb-65 {
+	margin-bottom: 65px;
+}
+
+.mb-70 {
+	margin-bottom: 70px;
+}
+
+.mb-75 {
+	margin-bottom: 75px;
+}
+
+.mb-80 {
+	margin-bottom: 80px;
+}
+
+.mb-85 {
+	margin-bottom: 85px;
+}
+
+.mb-90 {
+	margin-bottom: 90px;
+}
+
+.mb-95 {
+	margin-bottom: 95px;
+}
+
+.mb-100 {
+	margin-bottom: 100px;
+}
+
+.mb-105 {
+	margin-bottom: 105px;
+}
+
+.mb-110 {
+	margin-bottom: 110px;
+}
+
+.mb-115 {
+	margin-bottom: 115px;
+}
+
+.mb-120 {
+	margin-bottom: 120px;
+}
+
+.mb-125 {
+	margin-bottom: 125px;
+}
+
+.mb-130 {
+	margin-bottom: 130px;
+}
+
+.mb-135 {
+	margin-bottom: 135px;
+}
+
+.mb-140 {
+	margin-bottom: 140px;
+}
+
+.mb-145 {
+	margin-bottom: 145px;
+}
+
+.mb-150 {
+	margin-bottom: 150px;
+}
+
+.mb-155 {
+	margin-bottom: 155px;
+}
+
+.mb-160 {
+	margin-bottom: 160px;
+}
+
+.mb-165 {
+	margin-bottom: 165px;
+}
+
+.mb-170 {
+	margin-bottom: 170px;
+}
+
+.mb-175 {
+	margin-bottom: 175px;
+}
+
+.mb-180 {
+	margin-bottom: 180px;
+}
+
+.mb-185 {
+	margin-bottom: 185px;
+}
+
+.mb-190 {
+	margin-bottom: 190px;
+}
+
+.mb-195 {
+	margin-bottom: 195px;
+}
+
+.mb-200 {
+	margin-bottom: 200px;
+}
+
+/*-- Padding Top --*/
+.pt-5 {
+	padding-top: 5px;
+}
+
+.pt-10 {
+	padding-top: 10px;
+}
+
+.pt-15 {
+	padding-top: 15px;
+}
+
+.pt-20 {
+	padding-top: 20px;
+}
+
+.pt-25 {
+	padding-top: 25px;
+}
+
+.pt-30 {
+	padding-top: 30px;
+}
+
+.pt-35 {
+	padding-top: 35px;
+}
+
+.pt-40 {
+	padding-top: 40px;
+}
+
+.pt-45 {
+	padding-top: 45px;
+}
+
+.pt-50 {
+	padding-top: 50px;
+}
+
+.pt-55 {
+	padding-top: 55px;
+}
+
+.pt-60 {
+	padding-top: 60px;
+}
+
+.pt-65 {
+	padding-top: 65px;
+}
+
+.pt-70 {
+	padding-top: 70px;
+}
+
+.pt-75 {
+	padding-top: 75px;
+}
+
+.pt-80 {
+	padding-top: 80px;
+}
+
+.pt-85 {
+	padding-top: 85px;
+}
+
+.pt-90 {
+	padding-top: 90px;
+}
+
+.pt-95 {
+	padding-top: 95px;
+}
+
+.pt-100 {
+	padding-top: 100px;
+}
+
+.pt-105 {
+	padding-top: 105px;
+}
+
+.pt-110 {
+	padding-top: 110px;
+}
+
+.pt-115 {
+	padding-top: 115px;
+}
+
+.pt-120 {
+	padding-top: 120px;
+}
+
+.pt-125 {
+	padding-top: 125px;
+}
+
+.pt-130 {
+	padding-top: 130px;
+}
+
+.pt-135 {
+	padding-top: 135px;
+}
+
+.pt-140 {
+	padding-top: 140px;
+}
+
+.pt-145 {
+	padding-top: 145px;
+}
+
+.pt-150 {
+	padding-top: 150px;
+}
+
+.pt-155 {
+	padding-top: 155px;
+}
+
+.pt-160 {
+	padding-top: 160px;
+}
+
+.pt-165 {
+	padding-top: 165px;
+}
+
+.pt-170 {
+	padding-top: 170px;
+}
+
+.pt-175 {
+	padding-top: 175px;
+}
+
+.pt-180 {
+	padding-top: 180px;
+}
+
+.pt-185 {
+	padding-top: 185px;
+}
+
+.pt-190 {
+	padding-top: 190px;
+}
+
+.pt-195 {
+	padding-top: 195px;
+}
+
+.pt-200 {
+	padding-top: 200px;
+}
+
+/*-- Padding Bottom --*/
+.pb-5 {
+	padding-bottom: 5px;
+}
+
+.pb-10 {
+	padding-bottom: 10px;
+}
+
+.pb-15 {
+	padding-bottom: 15px;
+}
+
+.pb-20 {
+	padding-bottom: 20px;
+}
+
+.pb-25 {
+	padding-bottom: 25px;
+}
+
+.pb-30 {
+	padding-bottom: 30px;
+}
+
+.pb-35 {
+	padding-bottom: 35px;
+}
+
+.pb-40 {
+	padding-bottom: 40px;
+}
+
+.pb-45 {
+	padding-bottom: 45px;
+}
+
+.pb-50 {
+	padding-bottom: 50px;
+}
+
+.pb-55 {
+	padding-bottom: 55px;
+}
+
+.pb-60 {
+	padding-bottom: 60px;
+}
+
+.pb-65 {
+	padding-bottom: 65px;
+}
+
+.pb-70 {
+	padding-bottom: 70px;
+}
+
+.pb-75 {
+	padding-bottom: 75px;
+}
+
+.pb-80 {
+	padding-bottom: 80px;
+}
+
+.pb-85 {
+	padding-bottom: 85px;
+}
+
+.pb-90 {
+	padding-bottom: 90px;
+}
+
+.pb-95 {
+	padding-bottom: 95px;
+}
+
+.pb-100 {
+	padding-bottom: 100px;
+}
+
+.pb-105 {
+	padding-bottom: 105px;
+}
+
+.pb-110 {
+	padding-bottom: 110px;
+}
+
+.pb-115 {
+	padding-bottom: 115px;
+}
+
+.pb-120 {
+	padding-bottom: 120px;
+}
+
+.pb-125 {
+	padding-bottom: 125px;
+}
+
+.pb-130 {
+	padding-bottom: 130px;
+}
+
+.pb-135 {
+	padding-bottom: 135px;
+}
+
+.pb-140 {
+	padding-bottom: 140px;
+}
+
+.pb-145 {
+	padding-bottom: 145px;
+}
+
+.pb-150 {
+	padding-bottom: 150px;
+}
+
+.pb-155 {
+	padding-bottom: 155px;
+}
+
+.pb-160 {
+	padding-bottom: 160px;
+}
+
+.pb-165 {
+	padding-bottom: 165px;
+}
+
+.pb-170 {
+	padding-bottom: 170px;
+}
+
+.pb-175 {
+	padding-bottom: 175px;
+}
+
+.pb-180 {
+	padding-bottom: 180px;
+}
+
+.pb-185 {
+	padding-bottom: 185px;
+}
+
+.pb-190 {
+	padding-bottom: 190px;
+}
+
+.pb-195 {
+	padding-bottom: 195px;
+}
+
+.pb-200 {
+	padding-bottom: 200px;
+}
+
+/*-- Padding Left --*/
+.pl-0 {
+	padding-left: 0px;
+}
+
+.pl-5 {
+	padding-left: 5px;
+}
+
+.pl-10 {
+	padding-left: 10px;
+}
+
+.pl-15 {
+	padding-left: 15px;
+}
+
+.pl-20 {
+	padding-left: 20px;
+}
+
+.pl-25 {
+	padding-left: 35px;
+}
+
+.pl-30 {
+	padding-left: 30px;
+}
+
+.pl-35 {
+	padding-left: 35px;
+}
+
+.pl-35 {
+	padding-left: 35px;
+}
+
+.pl-40 {
+	padding-left: 40px;
+}
+
+.pl-45 {
+	padding-left: 45px;
+}
+
+.pl-50 {
+	padding-left: 50px;
+}
+
+.pl-55 {
+	padding-left: 55px;
+}
+
+.pl-60 {
+	padding-left: 60px;
+}
+
+.pl-65 {
+	padding-left: 65px;
+}
+
+.pl-70 {
+	padding-left: 70px;
+}
+
+.pl-75 {
+	padding-left: 75px;
+}
+
+.pl-80 {
+	padding-left: 80px;
+}
+
+.pl-85 {
+	padding-left: 80px;
+}
+
+.pl-90 {
+	padding-left: 90px;
+}
+
+.pl-95 {
+	padding-left: 95px;
+}
+
+.pl-100 {
+	padding-left: 100px;
+}
+
+/*-- Padding Right --*/
+.pr-0 {
+	padding-right: 0px;
+}
+
+.pr-5 {
+	padding-right: 5px;
+}
+
+.pr-10 {
+	padding-right: 10px;
+}
+
+.pr-15 {
+	padding-right: 15px;
+}
+
+.pr-20 {
+	padding-right: 20px;
+}
+
+.pr-25 {
+	padding-right: 35px;
+}
+
+.pr-30 {
+	padding-right: 30px;
+}
+
+.pr-35 {
+	padding-right: 35px;
+}
+
+.pr-35 {
+	padding-right: 35px;
+}
+
+.pr-40 {
+	padding-right: 40px;
+}
+
+.pr-45 {
+	padding-right: 45px;
+}
+
+.pr-50 {
+	padding-right: 50px;
+}
+
+.pr-55 {
+	padding-right: 55px;
+}
+
+.pr-60 {
+	padding-right: 60px;
+}
+
+.pr-65 {
+	padding-right: 65px;
+}
+
+.pr-70 {
+	padding-right: 70px;
+}
+
+.pr-75 {
+	padding-right: 75px;
+}
+
+.pr-80 {
+	padding-right: 80px;
+}
+
+.pr-85 {
+	padding-right: 80px;
+}
+
+.pr-90 {
+	padding-right: 90px;
+}
+
+.pr-95 {
+	padding-right: 95px;
+}
+
+.pr-100 {
+	padding-right: 100px;
+}
+
+
+@media(max-width:576px) {
+    .pt-100 {
+        padding-top:45px;
+    }
+    .pb-100 {
+        padding-bottom:45px;
+    }
+}
